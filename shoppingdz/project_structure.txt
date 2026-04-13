@@ -1,0 +1,54 @@
+# E-commerce Project Structure for shoppingdz
+
+shoppingdz/
+│
+├── backend/
+│   ├── config/
+│   │   ├── db.js            // Database connection configuration
+│   │   ├── server.js        // Server configuration
+│   ├── controllers/
+│   │   ├── authController.js  // Authentication logic
+│   │   ├── productController.js // Product management
+│   │   ├── orderController.js // Order management
+│   ├── models/
+│   │   ├── User.js          // User model
+│   │   ├── Product.js       // Product model
+│   │   ├── Order.js         // Order model
+│   ├── routes/
+│   │   ├── authRoutes.js     // Authentication routes
+│   │   ├── productRoutes.js   // Product routes
+│   │   ├── orderRoutes.js     // Order routes
+│   ├── middleware/
+│   │   ├── authMiddleware.js  // Middleware for authentication
+│   ├── services/
+│   │   ├── paymentService.js   // Payment processing logic
+│   ├── app.js                // Main application file
+│   └── package.json          // Backend dependencies
+│
+├── frontend/
+│   ├── public/
+│   │   ├── index.html        // Main HTML file
+│   │   ├── favicon.ico       // Favicon
+│   ├── src/
+│   │   ├── components/       // React components
+│   │   ├── pages/            // Application pages
+│   │   ├── App.js            // Main application component
+│   │   ├── index.js          // Entry point for React app
+│   │   └── styles/           // CSS styles
+│   ├── package.json          // Frontend dependencies
+│   └── .env                  // Environment variables
+│
+├── admin/
+│   ├── dashboard/
+│   │   ├── Admin.js          // Admin dashboard entry point
+│   │   ├── components/       // Components specific to admin dashboard
+│   │   └── styles/           // Styles for the admin dashboard
+│   ├── package.json          // Admin dashboard dependencies
+│
+├── scripts/
+│   ├── seedDatabase.js        // Script to seed the database
+│   └── start.js               // General start script for both frontend and backend
+│
+├── .gitignore                 // Git ignore file
+├── README.md                  // Project description and setup instructions
+└── docker-compose.yml         // Docker configuration for container setup
